@@ -210,15 +210,11 @@ def main():
 
     # Create a button for prediction
     if st.button('Booking Status'):
-        cancellation = cancellation_prediction([no_of_adults, no_of_children, no_of_weekend_nights, no_of_week_nights,
-                                                required_car_parking_space, lead_time, arrival_year, repeated_guest, 
-                                                no_of_previous_cancellations, no_of_previous_bookings_not_canceled, 
-                                                avg_price_per_room, no_of_special_requests, ToM_Plan_1,	ToM_Plan_2,	ToM_Plan_3,
-                                                ToM_Plan_NS, Room_Type_1, Room_Type_2, Room_Type_3,	Room_Type_4, Room_Type_5, 
-                                                Room_Type_6, Room_Type_7, arrival_month_1, arrival_month_10, arrival_month_11,
-                                                arrival_month_12, arrival_month_2, arrival_month_3, arrival_month_4, arrival_month_5,
-                                                arrival_month_6, arrival_month_7, arrival_month_8, arrival_month_9, market_segment_type_Aviation,
-                                                market_segment_type_Complementary, market_segment_type_Corporate, market_segment_type_Offline, market_segment_type_Online])
+        cancellation = cancellation_prediction([required_car_parking_space, lead_time, repeated_guest, no_of_previous_cancellations,
+                                                no_of_previous_bookings_not_canceled, avg_price_per_room, no_of_special_requests, total_guests,
+                                                total_night, Holidays, ToM_plan_1, ToM_Plan_2, ToM_Plan_3, ToM_Plan_NS, Room_type_1, Room_type_2,
+                                                Room_type_3, Room_type_4, Room_type_5, Room_type_6, Room_type_7, Aviation, Complementary, Corporate,
+                                                Offline, Online])
 
     st.success(cancellation)
 
