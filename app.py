@@ -212,7 +212,8 @@ def main():
     if st.button('Booking Status'):
         cancellation = cancellation_prediction([required_car_parking_space, lead_time, repeated_guest, no_of_previous_cancellations,
                                                 no_of_previous_bookings_not_canceled, avg_price_per_room, no_of_special_requests, total_guests,
-                                                total_night, Holidays, ToM_plan_1, ToM_Plan_2, ToM_Plan_3, ToM_Plan_NS, Room_type_1, Room_type_2,
+                                                total_night, Holidays, 
+                                                ToM_plan_1, ToM_Plan_2, ToM_Plan_3, ToM_Plan_NS, Room_type_1, Room_type_2,
                                                 Room_type_3, Room_type_4, Room_type_5, Room_type_6, Room_type_7, Aviation, Complementary, Corporate,
                                                 Offline, Online])
 
